@@ -4,12 +4,8 @@ Title: Robust Bayesian micro-array analysis
 Version: 0.1.0
 Author: Alexandra Posekany
 Maintainer: The package maintainer <alexandra.posekany@tuwien.ac.at>
-<<<<<<< HEAD
 Depends: Rcpp, RcppArmadillo
 Description: robayma performs a robust Bayesian ANOVA analysis for differential expression based on microarray or SNP array data. 
-=======
-Description: robbayma performs a robust Bayesian ANOVA analysis for differential expression based on microarray or SNP array data. 
->>>>>>> 1c04aeae4d8cafa8cffe7e0c4bf397983fa17f91
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
