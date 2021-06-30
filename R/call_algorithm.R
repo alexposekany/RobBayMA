@@ -5,8 +5,6 @@ library(RcppArmadillo)
 # set compiler options
 Sys.setenv("PKG_CXXFLAGS"=paste0(" -DARMA_64BIT_WORD=1 -I ",Sys.getenv("R_LIBS_USER"),"/Rcpp/include -I ", Sys.getenv("R_LIBS_USER"),"/RcppArmadillo/include"))
 
-Sys.getenv("PKG_CXXFLAGS")
-
 #Sys.setenv("CPLUS_INCLUDE_PATH"=paste0(Sys.getenv("R_LIBS_USER"),"/Rcpp/include"))
 
 print(paste(Sys.getenv("R_LIBS_USER"),"/Rcpp/include"))
@@ -40,10 +38,10 @@ ndraw_in <- 1000
 nrun <- nburn_in *2 + ndraw_in + 1
 
 ### data
-# Test Data set ("platinumSpike_balanced.csv") is in directory "test" and a
+# Test Data set ("data/platinumSpike_balanced.csv") is in directory "test" and a
 # subset of the Platinum Spike in data set.
 # File contains additional information. Only expression values are passed to algorithm
-data_full <- read.table("R/platinumSpike_balanced.csv", header = T, sep = '\t')
+data_full <- read.table("data/platinumSpike_balanced.csv", header = T, sep = '\t')
 input_data <- as.matrix(data_full[,4:21], dimnames = NULL)
 group_vec <- as.factor( c(rep(0, 9), rep(1,9) ))
 GId <- row.names(data_full)
