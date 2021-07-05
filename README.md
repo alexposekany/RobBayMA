@@ -1,13 +1,13 @@
-## RobBayMA
+# RobBayMA
 
 A repository to store and manage the code of the robbayma package.
 
-#### Setup
-
-The installation currently can only be run manually by cloning the repo, running 
-
+## Installation
 ```
-Sys.setenv("PKG_CXXFLAGS"=paste0(" -DARMA_64BIT_WORD=1 -I ",Sys.getenv("R_LIBS_USER"),"/Rcpp/include -I ", Sys.getenv("R_LIBS_USER"),"/RcppArmadillo/include"))
-```
+#install.packages("devtools")
+library(devtools)
+install_github("alexposekany/RobBayMA")
+library(robbayma)
 
-and then building it via command line or RStudio.
+#Your code goes here 😃
+```
