@@ -13,7 +13,7 @@ need nrun as input use ndraw
 
 [ ] please read and write data (csv, .RData, PDF) to the `data`-directory (best practice [2])  
 
-[ ] PKG_CXXFLAGS should be set via makefile or something similar [3]
+[x] PKG_CXXFLAGS should be set via makefile or something similar [3]
 
 
 ## Sources

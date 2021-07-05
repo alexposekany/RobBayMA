@@ -3,7 +3,7 @@ library(Rcpp)
 library(RcppArmadillo)
 
 # set compiler options
-Sys.setenv("PKG_CXXFLAGS"=paste0(" -DARMA_64BIT_WORD=1 -I ",Sys.getenv("R_LIBS_USER"),"/Rcpp/include -I ", Sys.getenv("R_LIBS_USER"),"/RcppArmadillo/include"))
+# Sys.setenv("PKG_CXXFLAGS"=paste0(" -DARMA_64BIT_WORD=1 -I ",Sys.getenv("R_LIBS_USER"),"/Rcpp/include -I ", Sys.getenv("R_LIBS_USER"),"/RcppArmadillo/include"))
 
 # main algorithm
 source('R/stmcmclm_cpp.R')
