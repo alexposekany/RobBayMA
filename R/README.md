@@ -13,7 +13,7 @@ need nrun as input use ndraw
 
 [ ] please read and write data (csv, .RData, PDF) to the `data`-directory (best practice [2])  
 
-[x] PKG_CXXFLAGS should be set via makefile or something similar [3]
+[x] PKG_CXXFLAGS should be set via makefile or something similar [3] **Could be done by adding "LinkingTo" in DESCRIPTION [5]**
 
 
 ## Sources
@@ -23,4 +23,6 @@ need nrun as input use ndraw
 
 [3] https://cran.r-project.org/doc/manuals/R-exts.html#Configure-and-cleanup  
 
-[4]https://r-pkgs.org/man.html
+[4] https://r-pkgs.org/man.html
+
+[5] https://r-pkgs.org/src.html#make
